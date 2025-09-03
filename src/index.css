@@ -1,46 +1,46 @@
 :root {
   /* Base */
-  --color-bg: #f4f4f4;               /* modern light gray for comfort */
-  --color-bg-secondary: #e9f0fc;     /* gentle blue-tinted wash, calming & pro */
-  --color-bg-tertiary: #fffdf6;      /* soft cream, subtle accent for sections */
+  --color-bg: #f4f4f4; /* modern light gray for comfort */
+  --color-bg-secondary: #e9f0fc; /* gentle blue-tinted wash, calming & pro */
+  --color-bg-tertiary: #fffdf6; /* soft cream, subtle accent for sections */
 
   /* Text */
-  --color-text: #23272a;             /* crisp dark, excellent contrast */
-  --color-text-secondary: #495057;   /* slate for less emphasis */
-  --color-text-muted: #8898aa;       /* subtle, readable muted */
-  --color-text-paragraph: #30303b;   /* easy-to-read deep gray */
-  --color-link: #3366cc;             /* accessible blue, standout & modern */
-  --color-link-hover: #254ba1;       /* deeper blue for clarity & action */
+  --color-text: #23272a; /* crisp dark, excellent contrast */
+  --color-text-secondary: #495057; /* slate for less emphasis */
+  --color-text-muted: #8898aa; /* subtle, readable muted */
+  --color-text-paragraph: #30303b; /* easy-to-read deep gray */
+  --color-link: #3366cc; /* accessible blue, standout & modern */
+  --color-link-hover: #254ba1; /* deeper blue for clarity & action */
 
   /* Accent (blue theme) */
-  --color-accent: #4a90e2;           /* professional muted blue accent */
-  --color-accent-hover: #357abd;     /* richer accent on hover */
-  --color-accent-alt: #53d6d1;       /* lively teal for secondary accent */
+  --color-accent: #4a90e2; /* professional muted blue accent */
+  --color-accent-hover: #357abd; /* richer accent on hover */
+  --color-accent-alt: #53d6d1; /* lively teal for secondary accent */
   --color-accent-alt-hover: #29bcb1; /* teal, more focus on hover */
 
   /* Supporting Accent */
-  --color-support: #fffc47;          /* warm muted amber, pairs evenly */
-  --color-support-hover: #e59826;    /* deeper amber on hover */
+  --color-support: #fffc47; /* warm muted amber, pairs evenly */
+  --color-support-hover: #e59826; /* deeper amber on hover */
 
   /* Status */
-  --color-success: #23b774;          /* balanced green with strong contrast */
+  --color-success: #23b774; /* balanced green with strong contrast */
   --color-success-hover: #158c4c;
-  --color-error: #e44463;            /* vivid but not overwhelming red */
+  --color-error: #e44463; /* vivid but not overwhelming red */
   --color-error-hover: #b7324c;
-  --color-warning: #fdcb5c;          /* soft yellow, readable warning */
-  --color-info: #3e8ed0;             /* accessible blue for info */
+  --color-warning: #fdcb5c; /* soft yellow, readable warning */
+  --color-info: #3e8ed0; /* accessible blue for info */
 
   /* Border & Shadow */
-  --color-border: #dce6ed;           /* gentle blue-gray border */
-  --color-border-strong: #4a90e2;    /* brand accent for strong elements */
-  --shadow: 0 4px 12px rgba(60, 72, 88, 0.10);
+  --color-border: #dce6ed; /* gentle blue-gray border */
+  --color-border-strong: #4a90e2; /* brand accent for strong elements */
+  --shadow: 0 4px 12px rgba(60, 72, 88, 0.1);
 
   /* Navigation */
   --color-nav-bg: linear-gradient(90deg, #4a90e2, #53d6d1);
-  --color-nav-link: #ffffff;         /* always clear on nav gradient */
-  --color-nav-link-hover: #d4edff;   /* soft light blue for highlight */
-  --color-nav-logo: #ccdbed;         /* accent blue for logo */
-  --color-nav-icon: #cef0ef;         /* teal for nav icons */
+  --color-nav-link: #ffffff; /* always clear on nav gradient */
+  --color-nav-link-hover: #d4edff; /* soft light blue for highlight */
+  --color-nav-logo: #ccdbed; /* accent blue for logo */
+  --color-nav-icon: #cef0ef; /* teal for nav icons */
 
   /* Buttons */
   --color-btn-bg: linear-gradient(135deg, #357abd, #53d6d1);
@@ -53,47 +53,55 @@
   --color-heading: #23272a;
   --color-subheading: #357abd;
 
-    /* Additional Card & Section Colors */
-    --color-section-bg: #ffffff;          /* soft pastel blue for sections */
-    --color-section-alt-bg: #fff5e5;      /* light peach, gentle & engaging */
-    --color-card-alt-bg: #f1f1fe;         /* pastel violet for subdued highlights */
-    --color-card-emphasis-bg: #ecfff3;    /* light mint, for callout/active card */
-    --color-slide-bg: #f9f9f9;            /* pale aqua, modern and subtle */
-    --color-slide-alt-bg: #f9eaf2;        /* rose tint, friendly accent */
-    --pill-gradient: linear-gradient(135deg, #eff4f9, #e8eff0);
-  --color-footer-bg: #f8fafc;           /* light footer background */
-  --color-certificate-bg: #f0f8ff;      /* light blue for certificates */
-  
-    /* Section/Card Borders */
-    --color-card-border: #dbdeea;         /* light bluish border */
-    --color-card-border-emph: #b8dbeb;    /* more saturated for emphasis */
+  /* Additional Card & Section Colors */
+  --color-section-bg: #ffffff; /* soft pastel blue for sections */
+  --color-section-alt-bg: #e1ebed; /* light peach, gentle & engaging */
+  --color-card-alt-bg: #f1f1fe; /* pastel violet for subdued highlights */
+  --color-card-emphasis-bg: #ecfff3; /* light mint, for callout/active card */
+  --color-slide-bg: #f9f9f9; /* pale aqua, modern and subtle */
+  --color-slide-alt-bg: #f9eaf2; /* rose tint, friendly accent */
+  --pill-gradient: linear-gradient(135deg, #eff4f9, #e8eff0);
+  --color-footer-bg: #f8fafc; /* light footer background */
+  --color-certificate-bg: #f0f8ff; /* light blue for certificates */
 
-    --gradient-separator: linear-gradient(90deg, #2facf0 0%, #97eef3 50%, #7070fc 100%);
+  /* Section/Card Borders */
+  --color-card-border: #dbdeea; /* light bluish border */
+  --color-card-border-emph: #b8dbeb; /* more saturated for emphasis */
+
+  --gradient-separator: linear-gradient(
+    90deg,
+    #2facf0 0%,
+    #97eef3 50%,
+    #7070fc 100%
+  );
+  --color-btn-scroll-bg: linear-gradient(135deg, #3b82f6, #60a5fa);
+  --color-btn-scroll-hover: linear-gradient(135deg, #2563eb, #3b82f6);
+  --color-btn-scroll-text: #ffffff;
+  --color-btn-scroll-icon: #e0f2fe;
 }
-
 
 [data-theme="dark"] {
   /* Base */
-  --color-bg: #181b20;               /* deep modern navy */
-  --color-bg-secondary: #1e2330;     /* soft blue-black for content */
-  --color-bg-tertiary: #222633;      /* slate for highlight */
+  --color-bg: #181b20; /* deep modern navy */
+  --color-bg-secondary: #1e2330; /* soft blue-black for content */
+  --color-bg-tertiary: #222633; /* slate for highlight */
 
   /* Text */
-  --color-text: #e5eaf2;             /* very light blue-gray */
-  --color-text-secondary: #bcc5d8;   /* soft blue for secondary */
-  --color-text-muted: #7b8c9e;       /* muted blue-gray for less focus */
-  --color-text-paragraph: #ccd3db;   /* clean off-white for paragraph */
-  --color-link: #4a90e2;             /* vibrant blue for links */
-  --color-link-hover: #53d6d1;       /* bright teal for hover */
+  --color-text: #e5eaf2; /* very light blue-gray */
+  --color-text-secondary: #bcc5d8; /* soft blue for secondary */
+  --color-text-muted: #7b8c9e; /* muted blue-gray for less focus */
+  --color-text-paragraph: #ccd3db; /* clean off-white for paragraph */
+  --color-link: #4a90e2; /* vibrant blue for links */
+  --color-link-hover: #53d6d1; /* bright teal for hover */
 
   /* Accent */
-  --color-accent: #53d6d1;           /* teal pops on dark bg */
-  --color-accent-hover: #29bcb1;     /* deeper teal for hover */
-  --color-accent-alt: #357abd;       /* blue as secondary accent */
+  --color-accent: #53d6d1; /* teal pops on dark bg */
+  --color-accent-hover: #29bcb1; /* deeper teal for hover */
+  --color-accent-alt: #357abd; /* blue as secondary accent */
   --color-accent-alt-hover: #4a90e2; /* more vivid blue hover */
 
   /* Supporting Accent */
-  --color-support: #fdcb5c;          /* yellow as supporting accent */
+  --color-support: #fdcb5c; /* yellow as supporting accent */
   --color-support-hover: #e59826;
 
   /* Status */
@@ -107,7 +115,7 @@
   /* Border & Shadow */
   --color-border: #222633;
   --color-border-strong: #53d6d1;
-  --shadow: 0 4px 12px rgba(44, 62, 80, 0.60);
+  --shadow: 0 4px 12px rgba(44, 62, 80, 0.6);
 
   /* Navigation */
   --color-nav-bg: linear-gradient(90deg, #357abd, #181b20);
@@ -123,32 +131,38 @@
 
   /* Cards & Typography */
   --color-card-bg: #2f3446;
-  --color-card-shadow: 0 6px 14px rgba(44, 62, 80, 0.70);
+  --color-card-shadow: 0 6px 14px rgba(44, 62, 80, 0.7);
   --color-heading: #e5eaf2;
   --color-subheading: #a3cbe8;
   --color-link: #8db8d6;
 
-    /* Additional Card & Section Colors */
-    --color-section-bg: #222a34;          /* deep muted blue for sections */
-    --color-section-alt-bg: #33263e;      /* rich plum for visual interest */
-    --color-card-alt-bg: #293746;         /* slate blue-gray for highlight */
-    --color-card-emphasis-bg: #274d3c;    /* deep forest green, for active states */
-    --color-slide-bg: #263740;            /* clean blue-black slide card */
-    --color-slide-alt-bg: #3c2633;        /* muted burgundy, creative accent */
-    --pill-gradient: linear-gradient(135deg, #253a51, #1a3e62);
-  --color-footer-bg: #1a1f2e;           /* dark footer background */
-  --color-certificate-bg: #2a3441;      /* dark blue for certificates */
-  
-    /* Section/Card Borders */
-    --color-card-border: #313b4d;         /* strong but subtle border */
-    --color-card-border-emph: #3a5378;    /* high contrast for emphasis */
+  /* Additional Card & Section Colors */
+  --color-section-bg: #222a34; /* deep muted blue for sections */
+  --color-section-alt-bg: #33263e; /* rich plum for visual interest */
+  --color-card-alt-bg: #293746; /* slate blue-gray for highlight */
+  --color-card-emphasis-bg: #274d3c; /* deep forest green, for active states */
+  --color-slide-bg: #263740; /* clean blue-black slide card */
+  --color-slide-alt-bg: #3c2633; /* muted burgundy, creative accent */
+  --pill-gradient: linear-gradient(135deg, #253a51, #1a3e62);
+  --color-footer-bg: #1a1f2e; /* dark footer background */
+  --color-certificate-bg: #2a3441; /* dark blue for certificates */
 
-    --gradient-separator: linear-gradient(90deg, #4e6179 0%, #3a5e7d 50%, #625276 100%);
+  /* Section/Card Borders */
+  --color-card-border: #313b4d; /* strong but subtle border */
+  --color-card-border-emph: #3a5378; /* high contrast for emphasis */
+
+  --gradient-separator: linear-gradient(
+    90deg,
+    #4e6179 0%,
+    #3a5e7d 50%,
+    #625276 100%
+  );
+
+  --color-btn-scroll-bg: linear-gradient(135deg, #1e3a8a, #2563eb);
+  --color-btn-scroll-hover: linear-gradient(135deg, #1e40af, #1d4ed8);
+  --color-btn-scroll-text: #f1f5f9;
+  --color-btn-scroll-icon: #93c5fd;
 }
-
-
-
-
 
 body {
   background: var(--color-bg);

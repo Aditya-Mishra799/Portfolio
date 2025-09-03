@@ -21,7 +21,7 @@ const projects = [
     ],
     image: getFlats,
     deployedLink: "https://get-flats-website-project-v1-umber.vercel.app/",
-    githubLink: "https://github.com/Aditya-Mishra799/GetFlats-Website-Project-v1",
+    githubLink: "https://github.com/Aditya-Mishra799/GetFlats-Real-Estate-Website-Project",
     techStack: ["Next.js", "MongoDB", "Tailwind-CSS"]
   },
   {
@@ -34,7 +34,7 @@ const projects = [
     ],
     image: translator,
     deployedLink: "https://nlp-speech-translator-website.vercel.app/",
-    githubLink: "https://github.com/Aditya-Mishra799/NLP-Speech-Translator",
+    githubLink: "https://github.com/Aditya-Mishra799/NLP-Speech-Translator-Website",
     techStack: ["Python ", "FastAPI ", "Chakra UI", "Docker", "Next.js"],
   },
   {

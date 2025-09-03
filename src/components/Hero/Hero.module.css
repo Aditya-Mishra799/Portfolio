@@ -25,13 +25,14 @@
   color: var(--color-heading);
 }
 .hero-cnt p {
-  font-size: 0.9em;
+  font-size: 1em;
   font-weight: 200;
   color: var(--color-subheading);
   white-space: pre-wrap;
+  word-spacing: 3px;
 }
 .hero-cnt .profession {
-  font-size: 0.9em;
+  font-size: 0.92em;
   color: var(--color-text-muted);
   font-weight: 500;
 }
@@ -47,7 +48,7 @@
 }
 
 .high-light {
-  font-size: 1em;
+  font-size: 1.3em;
   font-weight: 500;
   display: inline-block;
 }

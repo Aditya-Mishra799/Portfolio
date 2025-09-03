@@ -1,0 +1,21 @@
+.scroll-top-btn{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    background: var(--color-btn-scroll-bg);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+}
+.scroll-top-btn:hover{
+    background: var(--color-btn-scroll-hover);
+}
+.icon {
+    color: var(--color-btn-scroll-text);
+}

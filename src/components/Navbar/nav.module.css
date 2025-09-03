@@ -5,9 +5,10 @@
   top: 0;
   width: 100%;
   z-index: 2;
+  font-size: 1rem;
 }
 .nav-cnt h2 {
-  font-size: 22px;
+  font-size: 1.5em;
   font-weight: 500;
   text-transform: uppercase;
   color: var(--color-nav-logo);
@@ -15,12 +16,13 @@
 .nav-main {
   display: flex;
   justify-content: space-between;
-  padding: 1em 0.8em;
+  padding: 1em 1em;
 }
 .nav-logo {
   display: flex;
-  gap: 0.5em;
+  gap: 0.9em;
   align-items: center;
+  vertical-align: center;
 }
 .nav-links {
   position: absolute;
@@ -92,4 +94,10 @@
     .nav-btn{
         display: none;
     }
+}
+
+@media (max-width: 979px) {
+  .nav-cnt{
+    font-size: 0.85rem;
+  }
 }

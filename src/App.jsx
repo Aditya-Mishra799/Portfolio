@@ -6,6 +6,7 @@ import ExperienceSection from './components/Experience/ExperienceSection'
 import Hero from './components/Hero/Hero'
 import NavContainer from './components/Navbar/NavContainer'
 import ProjectsSection from './components/Projects/ProjectsSection'
+import ScrollTopBtn from './components/ScrollToTop/ScrollTopBtn'
 import SkillSection from './components/Skills/SkillSection'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
     <EducationSection/>
     <AchievementsSection/>
     <ContactSection/>
+    <ScrollTopBtn/>
     </div>
   )
 }

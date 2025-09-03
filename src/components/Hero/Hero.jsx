@@ -32,13 +32,17 @@ const Hero = () => {
         <p>
           <span className={styles['high-light']}>Hey there 👋, </span>
           I am a Full Stack Developer passionate about building
-          user-friendly and efficient web applications. I enjoy working with
-          MERN and Next.js and constantly improve my skills through coding and
-          problem-solving. I am always eager to learn something new and grow
-          both technically and personally. Collaboration, adaptability, and
-          contributing to impactful projects are what I value the most. Excited
-          to connect with like-minded professionals and explore opportunities to
-          learn and contribute!
+          user-friendly and efficient web applications.
+          <br />
+          <br />
+          I enjoy working with MERN and Next.js and constantly improve my 
+          skills through coding and problem-solving. I am always eager to learn 
+          something new and grow both technically and personally. 
+          Collaboration, adaptability, and contributing to impactful projects are what I value the most.
+          <br />
+          <br />
+          Excited to connect with like-minded professionals and explore
+          opportunities to learn and contribute!
         </p>
         <div className={styles['links']}>
           {links.map(({ icon, link }) => (
