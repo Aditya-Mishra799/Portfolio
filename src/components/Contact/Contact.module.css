@@ -1,0 +1,246 @@
+.contact-section {
+  background: var(--color-section-bg);
+  margin-top: 2em;
+  padding: 3em 0 2em 0;
+  border-top: 4px solid var(--color-accent);
+}
+
+.contact-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2em;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 3em;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.contact-header h2 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: var(--color-heading);
+  margin: 0 0 0.5em 0;
+  background: var(--color-nav-bg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.contact-header p {
+  font-size: 1.1em;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+  margin-bottom: 3em;
+}
+
+.contact-info h3,
+.social-section h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  color: var(--color-subheading);
+  margin: 0 0 1.5em 0;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background: var(--color-card-alt-bg);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  animation: slideInLeft 0.6s ease-out both;
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.1);
+}
+
+.contact-icon {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.8em;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+
+.contact-label {
+  font-size: 0.85em;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.contact-value {
+  font-size: 1em;
+  color: var(--color-text);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-value:hover {
+  color: var(--color-accent);
+}
+
+.social-section {
+  animation: slideInRight 0.6s ease-out;
+}
+
+.social-links {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  background: var(--color-card-bg);
+  border: 2px solid var(--color-card-border);
+  color: var(--color-text);
+  padding: 1em;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  min-width: 60px;
+  min-height: 60px;
+}
+
+.social-link:hover {
+  background: var(--color-accent);
+  color: white;
+  transform: translateY(-4px) rotate(5deg);
+  box-shadow: 0 8px 20px rgba(74, 144, 226, 0.3);
+  border-color: var(--color-accent);
+}
+
+.resume-section {
+  margin-top: 1.5em;
+}
+
+.resume-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8em;
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
+  padding: 1em 2em;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(74, 144, 226, 0.2);
+}
+
+.resume-button:hover {
+  background: var(--color-btn-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(74, 144, 226, 0.3);
+}
+
+.contact-footer {
+  text-align: center;
+  padding-top: 2em;
+  border-top: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  font-size: 0.9em;
+  animation: fadeIn 1s ease-out;
+}
+
+.contact-footer p {
+  margin: 0.3em 0;
+}
+
+@media (min-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .contact-container {
+    padding: 0 3em;
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-container {
+    padding: 0 1em;
+  }
+  
+  .contact-header h2 {
+    font-size: 2em;
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

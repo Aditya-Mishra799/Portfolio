@@ -1,0 +1,95 @@
+.nav-cnt {
+  background: var(--color-nav-bg);
+  color: var(--color-nav-link);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+.nav-cnt h2 {
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--color-nav-logo);
+}
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 0.8em;
+}
+.nav-logo {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+.nav-links {
+  position: absolute;
+  background: var(--color-nav-bg);
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 1.5em;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  font-size: 1.1em;
+}
+.nav-open {
+  max-height: 500px;
+  opacity: 1;
+}
+.nav-links a {
+  cursor: pointer;
+  color: var(--color-nav-link);
+  text-decoration: none;
+}
+.nav-links a:hover {
+    color: var(--color-nav-link-hover);
+    text-decoration: underline;
+  }
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fdfdfd;
+  cursor: pointer;
+}
+.nav-btn .icon {
+  width: 25px;
+  height: 25px;
+  color: var(--color-nav-icon);
+}
+.mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+  color: var(--color-nav-icon);
+}
+
+@media (min-width: 840px) {
+    .nav-cnt{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-main{
+        width: max-content;
+    }
+    .nav-links{
+        position: static;
+        flex-direction: row;
+        opacity: 1;
+        max-height: max-content;
+        background: transparent;
+        justify-self: flex-end;
+        gap: 1.5em;             
+        width: auto;          
+        max-height: none;  
+    }
+    .nav-btn{
+        display: none;
+    }
+}

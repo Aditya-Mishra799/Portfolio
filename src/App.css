@@ -1,0 +1,20 @@
+h1, h2, h3, h4 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body, p, span {
+  font-family: 'Inter', sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.div{
+  padding-top: 5em;

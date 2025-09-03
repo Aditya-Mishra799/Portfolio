@@ -1,0 +1,189 @@
+.achievements-cnt {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5em;
+  margin-bottom: 2em;
+}
+
+.certificates-cnt {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1em;
+}
+
+.achievement-card {
+  background: var(--color-card-bg);
+  border-radius: 12px;
+  padding: 1.5em;
+  box-shadow: var(--color-card-shadow);
+  transition: all 0.3s ease;
+  animation: bounceIn 0.6s ease-out both;
+  display: flex;
+  gap: 1em;
+}
+
+.achievement-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(255, 215, 0, 0.2);
+  border-color: var(--color-support);
+}
+
+.achievement-icon {
+  background: linear-gradient(135deg, var(--color-support), var(--color-support-hover));
+  color: white;
+  padding: 0.8em;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.achievement-content {
+  flex: 1;
+}
+
+.achievement-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0 0 0.3em 0;
+}
+
+.organization {
+  color: var(--color-accent);
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.achievement-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  margin: 0.8em 0;
+  font-size: 0.85em;
+  color: var(--color-text-secondary);
+}
+
+.date,
+.rank {
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+}
+
+.certificate-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+  color: var(--color-link);
+  text-decoration: none;
+  font-size: 0.9em;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.certificate-link:hover {
+  color: var(--color-link-hover);
+}
+
+.certificate-card {
+  background: var(--color-card-alt-bg);
+  border-radius: 10px;
+  padding: 1em;
+  box-shadow: var(--color-card-shadow);
+  transition: all 0.3s ease;
+  animation: fadeInScale 0.5s ease-out both;
+  display: flex;
+  gap: 0.8em;
+}
+
+.certificate-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 144, 226, 0.15);
+  border-color: var(--color-accent);
+}
+
+.certificate-icon {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.6em;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.certificate-content {
+  flex: 1;
+}
+
+.certificate-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0 0 0.2em 0;
+}
+
+.certificate-org {
+  color: var(--color-text-secondary);
+  font-size: 0.85em;
+  font-weight: 500;
+}
+
+.certificate-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8em;
+  font-size: 0.8em;
+}
+
+.certificate-meta .date {
+  display: flex;
+  align-items: center;
+  gap: 0.3em;
+  color: var(--color-text-secondary);
+}
+
+.certificate-meta .certificate-link {
+  font-size: 0.8em;
+  gap: 0.3em;
+}
+
+@media (min-width: 768px) {
+  .achievements-cnt {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
