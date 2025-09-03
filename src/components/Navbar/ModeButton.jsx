@@ -8,10 +8,22 @@ const modeIcon = {
 };
 const ModeButton = ({ ...props }) => {
   const [mode, setMode] = useState(0);
-  const toggleMode = () => setMode((prev) => (prev + 1) % modes.length);
+  const toggleMode = () => {
+    setMode((prev) => {
+      const newMode = (prev + 1) % modes.length;
+      localStorage.setItem("mode", String(newMode));
+      return newMode;
+    });
+  };
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", modes[mode]);
   }, [mode]);
+  useEffect(() => {
+    const storedMode = localStorage.getItem("mode");
+    if (storedMode) {
+      setMode(parseInt(storedMode));
+    }
+  }, []);
   return (
     <button {...props} onClick={toggleMode} className={styles["mode-btn"]}>
       {modeIcon[modes[mode]]}
