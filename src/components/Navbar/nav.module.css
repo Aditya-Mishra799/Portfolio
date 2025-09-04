@@ -66,8 +66,44 @@
   background: none;
   border: none;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: 8px;
   color: var(--color-nav-icon);
+  padding: 0.5em;
+  position: relative;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.mode-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(74, 144, 226, 0.3);
+}
+
+.mode-btn:active {
+  transform: scale(0.95);
+}
+
+.mode-btn::after {
+  content: 'Theme';
+  position: absolute;
+  bottom: -2.5em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.3em 0.6em;
+  border-radius: 4px;
+  font-size: 0.7em;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.mode-btn:hover::after {
+  opacity: 1;
 }
 
 @media (min-width: 840px) {

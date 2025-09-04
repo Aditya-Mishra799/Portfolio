@@ -23,10 +23,12 @@ const ModeButton = ({ ...props }) => {
     if (storedMode) {
       setMode(parseInt(storedMode));
     } else {
-      const systemPreference = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      setMode(systemPreference ? 1 : 0);
+      if (window) {
+        const systemPreference = window.matchMedia(
+          "(prefers-color-scheme: dark)"
+        ).matches;
+        setMode(systemPreference ? 1 : 0);
+      }
     }
   }, []);
   return (
