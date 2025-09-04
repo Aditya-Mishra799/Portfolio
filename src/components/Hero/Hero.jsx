@@ -27,7 +27,7 @@ const Hero = () => {
       <img src={devImage} alt="profile" />
       <div className={styles['hero-about']}>
         <h2>I AM Aditya Mishra</h2>
-        <span className={styles['profession']}>Full Stack Developer</span>
+        <span className={`${styles['profession']} typewriter`}>Full Stack Developer</span>
         <hr className={styles['separator']}/>
         <p>
           <span className={styles['high-light']}>Hey there 👋, </span>

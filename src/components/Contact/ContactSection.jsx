@@ -61,7 +61,7 @@ const ContactSection = () => {
             <h3>Contact Information</h3>
             <div className={styles['contact-list']}>
               {contactInfo.map((item, index) => (
-                <div key={index} className={styles['contact-item']}>
+                <div key={index} className={`${styles['contact-item']} stagger-animation`}>
                   <div className={styles['contact-icon']}>
                     {item.icon}
                   </div>
