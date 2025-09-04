@@ -13,9 +13,9 @@ const ScrollTopBtn = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    visible  && <div class={styles["scroll-top-btn"]}>
+    visible  && <div className={styles["scroll-top-btn"]}>
       <a href="#">
-        <ArrowUpFromLine class={styles["icon"]}/>
+        <ArrowUpFromLine className={styles["icon"]}/>
       </a>
     </div>
   );

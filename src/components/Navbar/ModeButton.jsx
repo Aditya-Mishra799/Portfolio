@@ -22,6 +22,11 @@ const ModeButton = ({ ...props }) => {
     const storedMode = localStorage.getItem("mode");
     if (storedMode) {
       setMode(parseInt(storedMode));
+    } else {
+      const systemPreference = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
+      setMode(systemPreference ? 1 : 0);
     }
   }, []);
   return (
