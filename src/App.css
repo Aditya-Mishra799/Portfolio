@@ -16,7 +16,14 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Import animations */
+@import './styles/animations.css';
+
+/* Add smooth transitions for theme switching */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
 .div{
   padding-top: 5em;
-
 }

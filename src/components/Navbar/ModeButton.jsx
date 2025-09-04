@@ -32,7 +32,13 @@ const ModeButton = ({ ...props }) => {
     }
   }, []);
   return (
-    <button {...props} onClick={toggleMode} className={styles["mode-btn"]}>
+    <button 
+      {...props} 
+      onClick={toggleMode} 
+      className={styles["mode-btn"]}
+      title={`Switch to ${modes[mode] === 'light' ? 'dark' : 'light'} mode`}
+      aria-label={`Switch to ${modes[mode] === 'light' ? 'dark' : 'light'} mode`}
+    >
       {modeIcon[modes[mode]]}
     </button>
   );

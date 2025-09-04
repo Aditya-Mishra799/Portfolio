@@ -5,7 +5,7 @@ const Section = ({ Icon, children, label = "" }) => {
     <section className={styles["cnt"]}>
       <div className={styles["top"]}>
         <span className={styles["label"]}>
-          {<Icon className={styles["icon"]} />}
+          {<Icon className={`${styles["icon"]} float-animation`} />}
           <h3>{label}</h3>
         </span>
         <hr />

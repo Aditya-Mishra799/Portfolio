@@ -132,8 +132,8 @@
     }
 }
 
-@media (max-width: 979px) {
+@media (max-width: 985px) {
   .nav-cnt{
-    font-size: 0.85rem;
+    font-size: 0.82rem;
   }
 }
